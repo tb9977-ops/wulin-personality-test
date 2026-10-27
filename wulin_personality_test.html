@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171923">
+<title>测测你是《武林群侠传》里的谁？</title>
+<style>
+:root{--bg:#f4f0e8;--paper:#fffdf8;--ink:#22242b;--muted:#6d6b66;--red:#a33b2f;--gold:#c69b52;--line:#e5ddcf;--dark:#171923}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.65}
+button,input{font:inherit}.hero{background:radial-gradient(ellipse at 50% 0%,#37313a 0,#171923 62%);color:#fff;padding:56px 20px 42px;text-align:center;position:relative;overflow:hidden}.hero:after{content:"武";position:absolute;right:-8px;bottom:-105px;font-family:serif;font-size:290px;color:#ffffff08;pointer-events:none}.seal{display:inline-block;border:1px solid #c69b52;color:#e8c98d;padding:4px 12px;letter-spacing:.18em;font-size:12px}.hero h1{font-family:"STSong","Songti SC",serif;font-size:clamp(30px,6vw,52px);line-height:1.2;margin:20px auto 14px;max-width:760px;letter-spacing:.04em}.hero p{color:#d4d0ca;max-width:580px;margin:0 auto 24px;font-size:15px}.hero .meta{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;color:#c8c2b7;font-size:13px}.wrap{max-width:820px;margin:0 auto;padding:28px 16px 64px}.intro{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:-2px;box-shadow:0 10px 30px #29211608}.intro strong{color:var(--red)}.progress-wrap{position:sticky;top:0;z-index:5;background:#f4f0e8ed;backdrop-filter:blur(10px);padding:12px 0 10px}.progress-head{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:7px}.progress{height:6px;border-radius:99px;background:#ded7cb;overflow:hidden}.progress span{display:block;height:100%;width:0;background:var(--red);transition:width .25s}.question{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin:16px 0}.qhead{display:flex;gap:12px;align-items:flex-start}.qnum{flex:0 0 34px;height:34px;border-radius:50%;background:#f0e5d4;color:var(--red);display:grid;place-items:center;font-weight:800}.question h2{font-size:18px;line-height:1.5;margin:2px 0 16px}.options{display:grid;gap:10px}.option{display:flex;align-items:flex-start;gap:11px;padding:13px 14px;border:1px solid #e5dfd4;border-radius:12px;background:#fff;cursor:pointer;transition:.15s}.option:hover{border-color:#c9a36c;background:#fffaf1}.option.selected{border-color:var(--red);background:#fbf0ec;box-shadow:inset 0 0 0 1px var(--red)}.letter{width:25px;height:25px;flex:0 0 25px;border-radius:50%;display:grid;place-items:center;background:#f1eee8;color:#5e594f;font-size:12px;font-weight:800}.selected .letter{background:var(--red);color:white}.option input{position:absolute;opacity:0;pointer-events:none}.option-text{font-size:15px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.btn{border:0;border-radius:999px;padding:13px 22px;cursor:pointer;font-weight:700}.btn-primary{background:var(--red);color:white;box-shadow:0 5px 14px #a33b2f25}.btn-primary:hover{background:#842d24}.btn-secondary{background:transparent;border:1px solid #cfc5b6;color:var(--ink)}.btn:disabled{opacity:.4;cursor:not-allowed}.hint{font-size:13px;color:var(--muted)}.error{color:var(--red);font-size:14px;display:none;margin-top:8px}.result{display:none}.result.show{display:block}.result-hero{background:var(--dark);color:white;border-radius:22px;padding:30px 24px;text-align:center;position:relative;overflow:hidden}.result-hero:after{content:"侠";position:absolute;right:-4px;bottom:-75px;font-family:serif;font-size:210px;color:#ffffff08}.result-kicker{color:#e2bd79;letter-spacing:.18em;font-size:12px}.result-hero h2{font-family:"STSong","Songti SC",serif;font-size:42px;margin:7px 0 0;line-height:1.2}.result-character-image{display:block;width:min(100%,260px);max-height:300px;object-fit:contain;margin:0 auto 14px;border-radius:14px;filter:drop-shadow(0 10px 18px #0005)}.secondary-portrait{width:64px;height:84px;object-fit:contain;flex:0 0 64px;border-radius:8px;background:#eee5d8}.secondary .secondary-copy{flex:1;min-width:0}.tag{display:inline-block;margin:12px 0 8px;padding:4px 12px;border:1px solid #b68b4b;border-radius:999px;color:#e7c98d;font-size:13px}.result-hero p{max-width:570px;margin:8px auto 0;color:#dedbd5}.result-body{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:14px}.result-body h3{font-size:18px;margin:0 0 9px}.result-body p{margin:0 0 15px}.traits{display:grid;grid-template-columns:1fr 1fr;gap:12px}.trait{border-radius:12px;padding:15px;background:#f7f1e7}.trait small{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.secondary{display:flex;gap:12px;align-items:center;padding:14px;background:#f7f1e7;border-radius:12px;margin-top:10px}.rank{font-size:12px;color:var(--red);font-weight:800;min-width:38px}.secondary strong{display:block}.secondary span{font-size:13px;color:var(--muted)}.answer-review{display:grid;gap:12px}.review-item{padding-bottom:12px;border-bottom:1px solid var(--line)}.review-item:last-child{border:0;padding-bottom:0}.review-item strong{display:block;font-size:14px}.review-item p{font-size:14px;color:#56534e;margin:4px 0 0}.share-card{background:linear-gradient(145deg,#20202a,#37313a);color:white;border-radius:18px;padding:22px;text-align:center;border:1px solid #c69b52;position:relative;overflow:hidden}.share-card:before{content:"";position:absolute;inset:8px;border:1px solid #c69b524d;border-radius:12px;pointer-events:none}.share-card .small{font-size:11px;letter-spacing:.22em;color:#e0bd7b}.share-card h3{font-family:"STSong","Songti SC",serif;font-size:34px;margin:9px 0 2px}.share-card .share-tag{color:#e5c88e;font-size:14px}.share-card p{font-size:13px;color:#ddd8d0;max-width:400px;margin:10px auto 0}.footer{text-align:center;color:var(--muted);font-size:12px;margin:28px 0 0}.toast{display:none;margin-top:10px;color:#267346;font-size:13px}.note{font-size:12px;color:var(--muted);margin-top:12px}
+@media(max-width:560px){.hero{padding:42px 18px 32px}.question{padding:17px}.intro{padding:18px}.traits{grid-template-columns:1fr}.result-hero{padding:26px 18px}.result-hero h2{font-size:36px}.result-character-image{max-height:240px;width:min(100%,220px)}.wrap{padding-left:12px;padding-right:12px}.btn{flex:1}.option{padding:12px}}
+@media print{.hero,.intro,.progress-wrap,#quiz,.actions,.footer,.note{display:none!important}.wrap{max-width:none;padding:0}.result{display:block!important}.result-body{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="seal">江 湖 人 格 图 鉴</div>
+  <h1>测测你是《武林群侠传》里的谁？</h1>
+  <p>如果你身在江湖，你会成为怎样的人？用 15 道情境题，找到与你最相似的武林人物。</p>
+  <div class="meta"><span>◈ 15 道情境题</span><span>◈ 约 3 分钟</span><span>◈ 12 种人物类型</span></div>
+</header>
+<main class="wrap">
+  <section class="intro">
+    <strong>答题提示：</strong>选最接近你真实反应的答案，不必选“看起来最正确”的那个。测试会结合你的选择给出主角色、第二性格，以及每道题对应的性格解释。
+  </section>
+  <div class="progress-wrap" id="progressWrap">
+    <div class="progress-head"><span id="progressText">已完成 0 / 15 题</span><span id="progressPct">0%</span></div>
+    <div class="progress"><span id="progressBar"></span></div>
+  </div>
+  <form id="quiz" novalidate>
+    <div id="questions"></div>
+    <div class="actions">
+      <button class="btn btn-primary" id="submitBtn" type="submit">揭晓我的江湖人物</button>
+      <button class="btn btn-secondary" id="resetBtn" type="button">重新作答</button>
+    </div>
+    <div class="error" id="errorMsg">还有题目没有回答，请完成全部 15 题后揭晓结果。</div>
+    <p class="hint">本测试用于娱乐与自我观察，不是专业心理测评。</p>
+  </form>
+  <section class="result" id="result" aria-live="polite"></section>
+  <div class="footer">江湖很大，人物不止一种。你的结果代表答题时呈现出的倾向，不是给你贴上永久标签。</div>
+</main>
+<script>
+const characters = {
+"东方未明":{tag:"成长探索型",summary:"你不是非得一开始就赢的人；你擅长在经历里学习，在变化中找到自己的路。",strength:"学习快、适应力强，能在变化中成长。",weak:"容易被新鲜事物吸引，选择太多时可能缺乏长期坚持。",reason:"你的选择多次体现开放心态、尝试意愿和调整能力。你愿意先走出去，再根据真实经历修正方向。"},
+"谷月轩":{tag:"责任守护型",summary:"你在意的不只是自己能走多远，也在意身边的人能不能一起走下去。",strength:"有担当、重原则、值得信任，关键时刻能站出来。",weak:"容易过度承担，把别人的问题也扛到自己肩上。",reason:"你倾向于在关键时刻承担责任，并把保护他人、维护公平放在重要位置。"},
+"荆棘":{tag:"锋芒竞争型",summary:"你不喜欢被低估，也不愿轻易认输。对你来说，尊严和实力都很重要。",strength:"有斗志、抗压、重尊严，遇到挑战容易激发战斗力。",weak:"受挫时可能反应过激，把批评听成挑衅。",reason:"你的答案显示出较强的自尊心和胜负欲。你希望实力被看见，真正重视的人和事也可能比你表面表现出来的更重要。"},
+"傅剑寒":{tag:"豪爽自由型",summary:"比起被规矩框住，你更愿意把日子过得真实、痛快，和对的人并肩而行。",strength:"真诚、讲义气、重体验，不拘小节。",weak:"可能低估长期责任、规划和现实风险。",reason:"你更重视自由、真实关系和亲身体验，不愿为外界评价处处束缚自己。"},
+"沈湘芸":{tag:"共情照顾型",summary:"你会注意到别人没有说出口的情绪，希望解决问题时也能照顾人的感受。",strength:"细腻、体贴，善于理解他人和维护关系。",weak:"容易顾虑太多，或对亲近的人抱有较高期待。",reason:"你会留意他人的处境，倾向于先理解再判断。你在意的不是一味讨好，而是尽量兼顾问题和感受。"},
+"史燕":{tag:"现实生存型",summary:"你不轻易把命运交给别人。先看清代价、留好退路，再决定是否下注。",strength:"独立、机敏、务实，风险意识和边界感较强。",weak:"过度防备时，可能难以信任别人或接受帮助。",reason:"你的答案体现出较强的现实判断和自我保护意识。你会考虑后果、资源和选择权，而不是只凭承诺做决定。"},
+"蓝婷":{tag:"果断掌控型",summary:"你更喜欢主动推动事情，而不是一直等待别人决定。混乱出现时，你会本能地寻找方向。",strength:"有主见、决策果断，擅长组织和推动执行。",weak:"可能过于直接，对低效、拖延或失控缺乏耐心。",reason:"你偏好清晰目标、明确边界和主动权。面对问题，你更愿意作出决定并承担后果。"},
+"任清璇":{tag:"理想专注型",summary:"你需要一件真正值得投入的事。外界再热闹，也不能替代内心的认同。",strength:"有追求、内心坚定，能长期投入热爱的事物。",weak:"可能过于坚持自己的标准，显得疏离或不易妥协。",reason:"你看重自己真正认同的事物，不愿为短期利益轻易放弃。比起热闹和认可，你更在意生活是否符合自己的价值。"},
+"王蓉":{tag:"活泼行动型",summary:"你相信很多问题可以边走边解决。生活不该只有任务，也要有乐趣和鲜活的人。",strength:"有活力、反应快，善于互动、活跃气氛。",weak:"有时容易凭一时兴致行动，忽略后续安排。",reason:"你的选择表现出轻快、主动和重视生活乐趣的一面。你倾向于通过行动、互动和幽默表达自己。"},
+"无瑕子":{tag:"通透平衡型",summary:"你习惯从多个角度看问题，不急着把事情分成非黑即白。你追求的是合适，而不只是赢。",strength:"思路开阔、善于权衡，能够容纳不同观点。",weak:"有时过于从容，可能推迟必要的决定。",reason:"你不容易被单一情绪或立场绑架，习惯先看全局，再找兼顾原则与现实的办法。"},
+"古实":{tag:"踏实守序型",summary:"你相信可靠的积累胜过一时的风光。你的力量未必最张扬，却经得起时间检验。",strength:"耐心、自律、稳定，适合长期积累。",weak:"可能过于谨慎，低估自己的能力或错过机会。",reason:"你更相信持续努力和可靠的方法，而不是投机取巧。你愿意把基础做好，等待长期回报。"},
+"玄冥子":{tag:"谋略布局型",summary:"你会先观察棋盘，再决定怎么落子。信息、时机和人性，在你眼里都是局势的一部分。",strength:"擅长分析、观察局势和预判风险。",weak:"过度算计时容易损害信任，也可能忽略情感价值。",reason:"你倾向于先找出关键变量和潜在动机，再采取行动。你的策略意识很强，但不是所有关系都适合用输赢衡量。"}
+};
+const questions = [
+{q:"夜里赶路，你发现一群人围攻一个陌生人。你会？",opts:[
+["A","先上前阻止，不能眼看着无辜的人受欺负。","谷月轩"],
+["B","观察双方实力和局势，找最稳妥的介入方式。","玄冥子"],
+["C","先弄清楚发生了什么，再决定是否出手。","无瑕子"],
+["D","看不惯就出手，打完再问清楚也不迟。","荆棘"]]},
+{q:"你准备很久的事情，最后输给了一个你认为实力不如你的人。你会？",opts:[
+["A","不服气，马上复盘，下一次一定赢回来。","荆棘"],
+["B","接受结果，找出自己的问题，继续积累。","古实"],
+["C","换条路走，人生不止这一种可能。","东方未明"],
+["D","研究对方的做法，找出局势里被忽略的因素。","玄冥子"]]},
+{q:"朋友突然向你借一大笔钱，但没有明确还款计划。你会？",opts:[
+["A","看交情，只要对方真的困难，我愿意帮。","傅剑寒"],
+["B","先核实情况，确认自己能承受多大风险。","史燕"],
+["C","可以帮忙，但必须说清楚边界和条件。","蓝婷"],
+["D","先听完对方的处境，再判断怎样帮最合适。","沈湘芸"]]},
+{q:"你最理想的生活是什么样的？",opts:[
+["A","有值得守护的人，有责任，也有成就感。","谷月轩"],
+["B","自由自在，朋友相伴，想去哪里就去哪里。","傅剑寒"],
+["C","有自己的事业和话语权，人生由自己决定。","蓝婷"],
+["D","有一件真正热爱的事，可以长期钻研。","任清璇"]]},
+{q:"和亲近的人发生争执，对方误解了你的意思。你通常会？",opts:[
+["A","立刻解释清楚，不能接受被冤枉。","荆棘"],
+["B","先照顾对方情绪，等双方冷静再沟通。","沈湘芸"],
+["C","不想纠缠，给彼此一点空间。","任清璇"],
+["D","弄清争执的原因，想办法解决根本问题。","无瑕子"]]},
+{q:"如果你突然获得一笔足够改变人生的钱，你最想？",opts:[
+["A","投资自己，学习新技能，打开更多可能。","东方未明"],
+["B","改善生活，照顾重要的人，让大家过得更好。","王蓉"],
+["C","配置资产、保留后路，让自己拥有选择权。","史燕"],
+["D","建立自己的事业或团队，做出一番成绩。","蓝婷"]]},
+{q:"面对一条大家都说很难走、但你很感兴趣的道路，你会？",opts:[
+["A","先试试看，边做边学，不行再调整。","东方未明"],
+["B","评估风险，制定计划，准备充分再行动。","古实"],
+["C","只要认定目标，就不会轻易放弃。","任清璇"],
+["D","研究规则和关键人物，寻找有效的突破口。","玄冥子"]]},
+{q:"在一个陌生的新圈子里，你通常是什么状态？",opts:[
+["A","主动聊天、开玩笑，很快和大家熟起来。","王蓉"],
+["B","先观察每个人的性格，再决定和谁深交。","史燕"],
+["C","不必刻意表现，和朋友自在相处，按自己的节奏来。","傅剑寒"],
+["D","自然承担组织和协调的角色，让事情运转起来。","谷月轩"]]},
+{q:"你最无法忍受哪一种情况？",opts:[
+["A","明明有实力，却总被别人看轻。","荆棘"],
+["B","重要的人受委屈，而自己无能为力。","谷月轩"],
+["C","生活被安排得死死的，连选择的自由都没有。","傅剑寒"],
+["D","为了迎合别人，长期放弃自己真正喜欢的东西。","任清璇"]]},
+{q:"你认为什么才算真正的聪明？",opts:[
+["A","懂得学习和适应，能在变化中找到机会。","东方未明"],
+["B","看透人心和局势，知道什么时候进退。","玄冥子"],
+["C","见过复杂世事，仍能保持平和与分寸。","无瑕子"],
+["D","把普通的事情坚持做好，时间会给出答案。","古实"]]},
+{q:"团队遇到危机，所有人都在等一个人站出来时，你会？",opts:[
+["A","先承担起来，至少不能让局面继续恶化。","谷月轩"],
+["B","迅速决定方向，明确分工，推动执行。","蓝婷"],
+["C","先稳住大家情绪，让团队重新有信心。","沈湘芸"],
+["D","先找出危机背后的真正原因，再制定方案。","无瑕子"]]},
+{q:"你最希望别人怎样记住你？",opts:[
+["A","重情重义，和我在一起总是很痛快。","傅剑寒"],
+["B","有本事、有个性，不会轻易被打败。","荆棘"],
+["C","活得真实，有自己的乐趣和热爱。","王蓉"],
+["D","可靠、踏实，答应的事情一定尽力做到。","古实"]]},
+{q:"突然被安排和一群陌生人合作完成重要任务，你最先做什么？",opts:[
+["A","先把目标搞明白，边做边找自己的位置。","东方未明"],
+["B","确认每个人的能力和分工，建立执行计划。","蓝婷"],
+["C","先和大家打成一片，建立轻松的合作氛围。","王蓉"],
+["D","观察每个人的动机和利益，判断怎么配合最有效。","玄冥子"]]},
+{q:"你发现自己在某个领域很有天赋，但它未必能带来稳定收入。你会？",opts:[
+["A","只要真正热爱，就值得认真追求。","任清璇"],
+["B","先保证生活，再寻找可持续的投入方式。","史燕"],
+["C","继续练基本功，相信实力积累会打开机会。","古实"],
+["D","先体验一段时间，边行动边调整，不急着把人生一次定死。","王蓉"]]},
+{q:"当你发现一个朋友连续犯同样的错误，你更可能？",opts:[
+["A","坦诚指出问题，也会顾及对方感受，希望他真正走出来。","沈湘芸"],
+["B","先理解他为什么改不了，再找合适的方式提醒。","沈湘芸"],
+["C","尊重他的选择，但把自己的界限说清楚。","史燕"],
+["D","不急着评判，帮他从不同角度看清问题。","无瑕子"]]},
+];
+// Balance validation: every character is assigned exactly five answer slots.
+const counts={}; questions.forEach(q=>q.opts.forEach(o=>counts[o[2]]=(counts[o[2]]||0)+1));
+const balanced=Object.keys(characters).every(c=>counts[c]===5);
+const letters=["A","B","C","D"];
+const questionsEl=document.getElementById("questions");
+questions.forEach((q,i)=>{
+  const section=document.createElement("section");section.className="question";section.id="question-"+i;
+  const head=document.createElement("div");head.className="qhead";
+  const num=document.createElement("div");num.className="qnum";num.textContent=String(i+1).padStart(2,"0");
+  const title=document.createElement("h2");title.textContent=q.q;head.append(num,title);section.append(head);
+  const opts=document.createElement("div");opts.className="options";
+  q.opts.forEach((o,j)=>{
+    const label=document.createElement("label");label.className="option";
+    label.innerHTML=`<input type="radio" name="q${i}" value="${j}"><span class="letter">${letters[j]}</span><span class="option-text"></span>`;
+    label.querySelector(".option-text").textContent=o[1];
+    label.addEventListener("click",()=>{setTimeout(()=>{opts.querySelectorAll(".option").forEach(x=>x.classList.remove("selected"));label.classList.add("selected");updateProgress()},0)});
+    opts.append(label);
+  });
+  section.append(opts);questionsEl.append(section);
+});
+function getAnswers(){return questions.map((q,i)=>{const el=document.querySelector(`input[name="q${i}"]:checked`);return el?Number(el.value):null})}
+function updateProgress(){const a=getAnswers(),n=a.filter(x=>x!==null).length;document.getElementById("progressText").textContent=`已完成 ${n} / ${questions.length} 题`;document.getElementById("progressPct").textContent=Math.round(n/questions.length*100)+"%";document.getElementById("progressBar").style.width=(n/questions.length*100)+"%";document.getElementById("errorMsg").style.display="none"}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function makeResult(){
+ const answers=getAnswers();if(answers.some(x=>x===null)){document.getElementById("errorMsg").style.display="block";const idx=answers.findIndex(x=>x===null);document.getElementById("question-"+idx).scrollIntoView({behavior:"smooth",block:"center"});return}
+ const scores={};Object.keys(characters).forEach(c=>scores[c]=0);
+ answers.forEach((a,i)=>scores[questions[i].opts[a][2]]++);
+ const ranked=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+ const top=ranked[0][1],winners=ranked.filter(x=>x[1]===top).map(x=>x[0]);
+ // Fair tie-break: show all tied top characters rather than arbitrarily picking one.
+ const primary=winners[0],profile=characters[primary];
+ const second=ranked.find(x=>!winners.includes(x[0]));
+ const result=document.getElementById("result");
+ const winnerTitle=winners.length===1?primary:winners.join(" · ");
+ const winnerTag=winners.length===1?profile.tag:"复合型江湖人格";
+ const winnerSummary=winners.length===1?profile.summary:"你的答案同时指向几种鲜明的性格倾向。你不是单一模板，更适合结合下面的并列角色一起理解。";
+ const winnerReason=winners.length===1?profile.reason:"出现并列最高分，说明你的选择呈现多种同样突出的倾向。为了公平，测试不会用随机数或隐藏规则强行决定唯一角色。";
+ const characterPortraits = {
+  "东方未明": {src:"https://www.newton.com.tw/img/f/92d/nBnauUDNlhzNkNGM4MTN2ADOjNWOzkjMhJjN1ETMyImMmJmZzQzM1gzMxEzLtVGdp9yYpB3LltWahJ2Lt92YuUHZpFmYuMmczdWbp9yL6MHc0RHa.jpg", alt:"东方未明正派风格角色立绘"},
+  "谷月轩": {src:"https://so1.360tres.com/t0154589b8f308add2a.jpg", alt:"谷月轩角色立绘"},
+  "古实": {src:"https://img.3dmgame.com/uploads/allimg/160701/313_160701142100_1_lit.jpg", alt:"古实单人角色立绘（《侠客风云传前传》）"}
+ };
+ const portraitFor = name => characterPortraits[name] ? `<img class="result-character-image" src="${characterPortraits[name].src}" alt="${characterPortraits[name].alt}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">` : "";
+ const winnerPortraits = winners.map(portraitFor).join("");
+ let html=`<div class="result-hero">${winnerPortraits}<div class="result-kicker">你的江湖人物鉴定结果</div><h2>${escapeHtml(winnerTitle)}</h2><div class="tag">${escapeHtml(winnerTag)}</div><p>${escapeHtml(winnerSummary)}</p></div>`;
+ html+=`<div class="result-body"><h3>为什么你会得到这个结果？</h3><p>${escapeHtml(winnerReason)}</p><div class="traits"><div class="trait"><small>你的优势</small>${escapeHtml(winners.length===1?profile.strength:winners.map(c=>characters[c].strength).join(" "))}</div><div class="trait"><small>需要留意的盲点</small>${escapeHtml(winners.length===1?profile.weak:winners.map(c=>characters[c].weak).join(" "))}</div></div>`;
+ if(second){const secondPortrait=characterPortraits[second[0]]?`<img class="secondary-portrait" src="${characterPortraits[second[0]].src}" alt="${characterPortraits[second[0]].alt}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`:"";html+=`<h3 style="margin-top:22px">你的第二性格</h3><div class="secondary">${secondPortrait}<div class="rank">次高分</div><div class="secondary-copy"><strong>${escapeHtml(second[0])} · ${escapeHtml(characters[second[0]].tag)}</strong><span>${escapeHtml(characters[second[0]].summary)}</span></div></div>`}
+ if(winners.length>1){html+=`<h3 style="margin-top:22px">并列角色解析</h3>`+winners.map(c=>`<div class="secondary"><div class="rank">并列</div><div><strong>${escapeHtml(c)} · ${escapeHtml(characters[c].tag)}</strong><span>${escapeHtml(characters[c].reason)}</span></div></div>`).join("")}
+ html+=`</div><div class="result-body"><h3>逐题解析：你的选择透露了什么？</h3><div class="answer-review">`;
+ answers.forEach((a,i)=>{const opt=questions[i].opts[a],c=opt[2];html+=`<div class="review-item"><strong>${i+1}. ${escapeHtml(questions[i].q)}</strong><p>你的选择：${letters[a]}. ${escapeHtml(opt[1])}</p><p><b>${escapeHtml(c)}（${escapeHtml(characters[c].tag)}）</b>：${escapeHtml(characters[c].reason)}</p></div>`});
+ html+=`</div></div><div class="result-body"><h3>分享你的江湖身份</h3><div class="share-card" id="shareCard"><div class="small">WULIN PERSONALITY PROFILE</div><h3>${escapeHtml(winnerTitle)}</h3><div class="share-tag">${escapeHtml(winnerTag)}</div><p>${escapeHtml(winnerSummary)}</p><p style="margin-top:16px">测测你在《武林群侠传》里是谁？</p></div><div class="actions"><button class="btn btn-primary" type="button" id="copyBtn">复制结果文案</button><button class="btn btn-secondary" type="button" id="saveBtn">打印 / 保存为 PDF</button></div><div class="toast" id="copyToast">结果文案已复制。</div><p class="note">提示：点击“打印 / 保存为 PDF”，在系统打印窗口中选择“另存为 PDF”。若要制作图片海报，可对结果卡片截图。</p></div>`;
+ result.innerHTML=html;result.classList.add("show");document.getElementById("quiz").style.display="none";document.getElementById("progressWrap").style.display="none";result.scrollIntoView({behavior:"smooth",block:"start"});
+ document.getElementById("copyBtn").addEventListener("click",async()=>{const text=`我在《武林群侠传》性格测试中的结果：${winnerTitle}（${winnerTag}）\n${winnerSummary}\n优势：${winners.map(c=>characters[c].strength).join("；")}\n需要留意：${winners.map(c=>characters[c].weak).join("；")}\n你也来测测自己在江湖里是谁！`;try{await navigator.clipboard.writeText(text)}catch(e){const ta=document.createElement("textarea");ta.value=text;document.body.append(ta);ta.select();document.execCommand("copy");ta.remove()}document.getElementById("copyToast").style.display="block"});
+ document.getElementById("saveBtn").addEventListener("click",()=>window.print());
+}
+document.getElementById("quiz").addEventListener("submit",e=>{e.preventDefault();makeResult()});
+document.getElementById("resetBtn").addEventListener("click",()=>{document.getElementById("quiz").reset();document.querySelectorAll(".option").forEach(x=>x.classList.remove("selected"));document.getElementById("result").classList.remove("show");document.getElementById("result").innerHTML="";document.getElementById("quiz").style.display="block";document.getElementById("progressWrap").style.display="block";document.getElementById("errorMsg").style.display="none";updateProgress();window.scrollTo({top:0,behavior:"smooth"})});
+updateProgress();
+if(!balanced){console.warn("角色选项分配不平衡",counts)}
+</script>
+</body>
+</html>
